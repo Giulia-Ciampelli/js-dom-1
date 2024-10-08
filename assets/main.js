@@ -19,12 +19,18 @@ lightOn.classList.add('d-none');
 lightSwitch.innerHTML = 'Accendi';
 // #endregion assegnazioni variabili in global scope
 
-// #region assegnazione evento di accensione lampadina al bottone
+// #region assegnazione eventi
+// evento di accensione lampadina al bottone al click
 lightSwitch.addEventListener('click', function () {
     lightOff.classList.add('d-none');
     lightOn.classList.remove('d-none');
     lightSwitch.innerHTML = 'Spegni';
 })
-// #endregion assegnazione evento di accensione lampadina al bottone
 
-// come metterlo in un loop?
+// evento di cambio testo al secondo click
+lightSwitch.addEventListener('dblclick', function () {
+    lightOff.classList.remove('d-none');
+    lightOn.classList.add('d-none');
+    lightSwitch.innerHTML = 'Accendi';
+})
+// #endregion assegnazione eventi
