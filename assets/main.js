@@ -13,3 +13,8 @@ const lightOn = document.getElementById('bulb_on');
 const lightOff = document.getElementById('bulb_off');
 const lightSwitch = document.getElementById('switch');
 // #endregion dichiarazione variabili
+console.log(lightOn, lightOff, lightSwitch);
+
+// #region assegnazioni variabili in global scope
+lightOn.classList.add('d-none');
+// #endregion assegnazioni variabili in global scope
