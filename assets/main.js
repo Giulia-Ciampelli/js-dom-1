@@ -18,3 +18,9 @@ console.log(lightOn, lightOff, lightSwitch);
 // #region assegnazioni variabili in global scope
 lightOn.classList.add('d-none');
 // #endregion assegnazioni variabili in global scope
+
+// #region assegnazione evento al bottone
+lightSwitch.addEventListener('click', function () {
+    console.log('eureka!');
+})
+// #endregion assegnazione evento al bottone
