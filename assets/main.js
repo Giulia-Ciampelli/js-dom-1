@@ -22,15 +22,16 @@ lightSwitch.innerHTML = 'Accendi';
 // #region assegnazione eventi
 // evento di accensione lampadina al bottone al click
 lightSwitch.addEventListener('click', function () {
-    lightOff.classList.add('d-none');
-    lightOn.classList.remove('d-none');
-    lightSwitch.innerHTML = 'Spegni';
-})
 
-// evento di cambio testo al secondo click
-lightSwitch.addEventListener('dblclick', function () {
-    lightOff.classList.remove('d-none');
-    lightOn.classList.add('d-none');
-    lightSwitch.innerHTML = 'Accendi';
+    if (lightSwitch.innerHTML === 'Accendi') {
+        lightOff.classList.add('d-none');
+        lightOn.classList.remove('d-none');
+        lightSwitch.innerHTML = 'Spegni';
+    }
+    else if (lightSwitch.innerHTML === 'Spegni') {
+        lightOff.classList.remove('d-none');
+        lightOn.classList.add('d-none');
+        lightSwitch.innerHTML = 'Accendi';
+    }
 })
 // #endregion assegnazione eventi
