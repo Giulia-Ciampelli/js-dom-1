@@ -16,11 +16,15 @@ const lightSwitch = document.getElementById('switch');
 
 // #region assegnazioni variabili in global scope
 lightOn.classList.add('d-none');
+lightSwitch.innerHTML = 'Accendi';
 // #endregion assegnazioni variabili in global scope
 
-// #region assegnazione evento al bottone
+// #region assegnazione evento di accensione lampadina al bottone
 lightSwitch.addEventListener('click', function () {
     lightOff.classList.add('d-none');
     lightOn.classList.remove('d-none');
+    lightSwitch.innerHTML = 'Spegni';
 })
-// #endregion assegnazione evento al bottone
+// #endregion assegnazione evento di accensione lampadina al bottone
+
+// come metterlo in un loop?
