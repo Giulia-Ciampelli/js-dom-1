@@ -28,7 +28,7 @@ lightSwitch.addEventListener('click', function () {
         lightOn.classList.remove('d-none');
         lightSwitch.innerHTML = 'Spegni';
     }
-    else if (lightSwitch.innerHTML === 'Spegni') {
+    else {
         lightOff.classList.remove('d-none');
         lightOn.classList.add('d-none');
         lightSwitch.innerHTML = 'Accendi';
