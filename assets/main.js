@@ -7,3 +7,9 @@ console.log('im alive');
 // Facciamo accendi e spegni:
 // Al primo click la lampadina si accende e nel bottone compare la scritta "Spegni"
 // Al secondo click la lampadina si spegne e nel bottone compare la scritta "Accendi"
+
+// #region dichiarazione variabili
+const lightOn = document.getElementById('bulb_on');
+const lightOff = document.getElementById('bulb_off');
+const lightSwitch = document.getElementById('switch');
+// #endregion dichiarazione variabili
