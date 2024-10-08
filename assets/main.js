@@ -13,7 +13,6 @@ const lightOn = document.getElementById('bulb_on');
 const lightOff = document.getElementById('bulb_off');
 const lightSwitch = document.getElementById('switch');
 // #endregion dichiarazione variabili
-console.log(lightOn, lightOff, lightSwitch);
 
 // #region assegnazioni variabili in global scope
 lightOn.classList.add('d-none');
@@ -21,6 +20,7 @@ lightOn.classList.add('d-none');
 
 // #region assegnazione evento al bottone
 lightSwitch.addEventListener('click', function () {
-    console.log('eureka!');
+    lightOff.classList.add('d-none');
+    lightOn.classList.remove('d-none');
 })
 // #endregion assegnazione evento al bottone
